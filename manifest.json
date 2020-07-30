@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "SpeedChanger",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
