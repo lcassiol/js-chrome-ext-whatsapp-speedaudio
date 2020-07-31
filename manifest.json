@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "SpeedChanger",
+  "name": "Whatsapp SpeedChanger",
   "version": "0.1",
   "content_scripts": [
     {
@@ -8,5 +8,10 @@
       "css": ["style.css"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }

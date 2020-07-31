@@ -11,18 +11,21 @@ const interval = setInterval(() => {
     button.classList.add("twoTimesButton");
 
     button.addEventListener("click", () => {
-      const audios = document.querySelectorAll("audio");
       const speedbutton = document.getElementById("speedbutton");
-      audios.forEach((audio) => {
+
+      const audios = document.querySelectorAll("audio");
+      if (audios.length > 0) {
         actualSpeed += 0.25;
-        audio.playbackRate = actualSpeed;
-
         speedbutton.innerHTML = actualSpeed + "x";
+      }
 
-        if (actualSpeed > 2) {
-          actualSpeed = 1;
-          speedbutton.innerHTML = "1x";
-        }
+      if (actualSpeed > 2) {
+        actualSpeed = 1;
+        speedbutton.innerHTML = "1x";
+      }
+
+      audios.forEach((audio) => {
+        audio.playbackRate = actualSpeed;
       });
     });
 
