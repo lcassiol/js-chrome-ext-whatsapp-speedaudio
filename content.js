@@ -1,3 +1,5 @@
+let actualSpeed = 1;
+
 const interval = setInterval(() => {
   const header = document.querySelector("._3All_ span");
 
@@ -6,7 +8,7 @@ const interval = setInterval(() => {
 
     const button = document.createElement("button");
     button.setAttribute("id", "speedbutton");
-    let actualSpeed = 1;
+
     button.innerHTML = "1x";
     button.classList.add("twoTimesButton");
 
@@ -33,5 +35,22 @@ const interval = setInterval(() => {
     header.removeChild(buttons[2]);
     header.appendChild(button);
     header.appendChild(buttons[2]);
+  }
+}, 1000);
+
+const intervalAudios = setInterval(() => {
+  const audioButtons = document.querySelectorAll("._2Y-Jy");
+
+  if (audioButtons.length > 0) {
+    // clearInterval(intervalAudios);
+
+    audioButtons.forEach((audioButton) => {
+      audioButton.addEventListener("click", () => {
+        const audios = document.querySelectorAll("audio");
+        audios.forEach((audio) => {
+          audio.playbackRate = actualSpeed;
+        });
+      });
+    });
   }
 }, 1000);
