@@ -10,3 +10,6 @@
 <p align="center">
   <img alt="menu" title="" src="https://github.com/lcassiol/js-chrome-ext-whatsapp-speedaudio/blob/master/assets/menucombotoes.png?raw=true">
 </p>
+
+
+![Alt Text](https://github.com/lcassiol/js-chrome-ext-whatsapp-speedaudio/blob/master/assets/extfuncionando.gif?raw=true)
