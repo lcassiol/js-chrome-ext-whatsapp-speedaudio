@@ -13,3 +13,12 @@
 
 
 ![Alt Text](https://github.com/lcassiol/js-chrome-ext-whatsapp-speedaudio/blob/master/assets/extfuncionando.gif?raw=true)
+
+
+### Instalação
+
+- Clonar o projeto
+- Ir para extensões no Google Chrome
+- Ativar modo desenvolvedor
+- Adicionar extensão unpacked e escolher a pasta onde o projeto foi clonado
+
